@@ -14,7 +14,7 @@ Daily News Reader app 📘. Learning Paging3 with MVVM,Retrofit, Kotlin Coroutin
 -   ViewModel, LiveData, Lifecycle, ... with [Android Jetpack](https://developer.android.com/jetpack)
 -   Dependency injection [Dagger]
 
-#Get your api key from here  (https://newsapi.org/register)
+# Get your api key from here  (https://newsapi.org/register)
 
 # Screenshots
 
