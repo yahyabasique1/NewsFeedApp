@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTitleHolder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etSearchBar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#0D34495E"
+            android:drawableEnd="@drawable/ic_searchicon"
+            android:drawablePadding="32dp"
+            android:hint="Enter keyword"
+            android:lines="1"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textAlignment="textStart"
+            android:textColor="#000"
+            android:textColorHint="#BF34495E"
+            android:textSize="12sp"
+            android:visibility="visible"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNewsFeedLoader"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvTitleHolder"
+     />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

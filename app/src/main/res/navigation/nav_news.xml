@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_news"
+    app:startDestination="@id/newsListFragment">
+
+    <fragment
+        android:id="@+id/newsListFragment"
+        android:name="com.yahya.newsfeedapp.view.newslist.NewsListFragment"
+        android:label="NewsListFragment"
+        tools:layout="@layout/fragment_newslist">
+        <action
+            android:id="@+id/action_newsListFragment_to_newsDetail"
+            app:destination="@id/newsDetail" />
+        <argument
+            android:name="NewsDetail"
+            app:argType="com.yahya.newsfeedapp.repository.remote.NewsListModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsDetail"
+        android:name="com.yahya.newsfeedapp.view.newsdetail.NewsDetail"
+        android:label="fragment_news_detail"
+        tools:layout="@layout/fragment_news_detail" >
+        <argument
+            android:name="NewsDetail"
+            app:argType="com.yahya.newsfeedapp.repository.remote.NewsListModel" />
+    </fragment>
+</navigation>
