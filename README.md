@@ -1,6 +1,6 @@
 # News-Feed-App With Paging3
 
-Daily News Reader app 📘. Learning MVVM / MVI with RxKotlin, Retrofit, Kotlin Coroutines
+Daily News Reader app 📘. Learning Paging3 with MVVM,Retrofit, Kotlin Coroutines, 
 
 # Project features 🚀
 
