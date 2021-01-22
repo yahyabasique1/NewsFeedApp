@@ -22,5 +22,6 @@ Daily News Reader app 📘. Learning Paging3 with MVVM,Retrofit, Kotlin Coroutin
 |        :---:            |          :---:          |        :---:            |          :---:          |
 | ![](screenshots/NewsListPage.png) | ![](screenshots/NewsDetailPage.png) 
 
-
+|                         |                                       |
+|       :---:             |                      :---:            |
 | ![](screenshots/Architecture.png) | ![](screenshots/PagingArch.png) |
